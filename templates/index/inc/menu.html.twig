@@ -1,0 +1,63 @@
+{% extends 'base.html.twig' %} 
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('web/css/style.css') }}" />
+{% endblock %} 
+{% block body %}
+<div class="top-bar">
+
+<span>Smorczewski Radosław</span>
+
+</div>
+<nav class="navbar">
+    <ul class="navbar-nav">
+      <li class="logo">
+        <a href="#" class="nav-link">
+          <span class="link-text logo-text">Smorczewski Radosław</span>
+          <i class="fas fa-angle-double-right fa-2x fa-primary"></i>
+        </a>
+      </li>
+
+      <li class="nav-item active">
+        <a href="#" class="nav-link">
+          <i class="fas fa-home fa-2x fa-primary"></i>
+          <span class="link-text">Cats</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <i class="fas fa-home fa-2x fa-primary"></i>
+          <span class="link-text">Cats</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <i class="fas fa-home fa-2x fa-primary"></i>
+          <span class="link-text">Cats</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <i class="fas fa-home fa-2x fa-primary"></i>
+          <span class="link-text">Cats</span>
+        </a>
+      </li>
+
+      
+
+      <li class="nav-item" id="themeButton">
+        <a href="#" class="nav-link">
+          <i id="lightIcon" class="theme-icon fas fa-sun fa-2x fa-primary"></i>
+          <i id="darkIcon" class="theme-icon fas fa-moon fa-2x fa-primary"></i>
+          <span class="link-text">Themify</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+{% endblock %}
+{% block javascripts %}
+{{ parent() }}
+  <script src="{{ asset('web/js/theme.js') }}" ></script>
+{% endblock %}
